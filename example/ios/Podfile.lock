@@ -1,0 +1,22 @@
+PODS:
+  - call_integrate (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - call_integrate (from `.symlinks/plugins/call_integrate/ios`)
+  - Flutter (from `Flutter`)
+
+EXTERNAL SOURCES:
+  call_integrate:
+    :path: ".symlinks/plugins/call_integrate/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  call_integrate: 5270096dd5aa7fbe85c4975eb3e84de0bc6d3914
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+
+PODFILE CHECKSUM: ef19549a9bc3046e7bb7d2fab4d021637c0c58a3
+
+COCOAPODS: 1.11.3

@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:call_integrate/call_integrate.dart';
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,29 +14,10 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
   final _callIntegratePlugin = CallIntegrate();
 
-  @override
-  void initState() {
-    super.initState();
-
-  }
-
-  // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> phoneCall(String phoneNo) async {
-    bool callStatus;
-    // Platform messages may fail, so we use a try/catch PlatformException.
-    // We also handle the message potentially returning null.
-
-      callStatus =
-          await _callIntegratePlugin.makePhoneCall(phoneNo) ?? false;
-
-
-    // If the widget was removed from the tree while the asynchronous platform
-    // message was in flight, we want to discard the reply rather than calling
-    // setState to update our non-existent appearance.
-
+    await _callIntegratePlugin.makePhoneCall(phoneNo);
   }
 
   @override
@@ -48,9 +29,8 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Center(
           child: ElevatedButton(
-            onPressed: (){
+            onPressed: () {
               phoneCall('1234567890');
-
             },
             child: const Text('Call'),
           ),

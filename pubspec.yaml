@@ -1,8 +1,7 @@
 name: call_integrate
 description: A new Flutter project.
 version: 0.0.1
-authors:
-  -Anurag Kumar
+repository: https://github.com/anuragkumar7416/call_integrate
 
 
 environment:

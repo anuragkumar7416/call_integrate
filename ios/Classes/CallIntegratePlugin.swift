@@ -25,7 +25,7 @@ public class CallIntegratePlugin: NSObject, FlutterPlugin {
       private func makePhoneCall(phoneNo:String){
 
 
-          if let url = URL(string: "tel://phoneNo"),
+          if let url = URL(string: "tel://"+phoneNo),
              UIApplication.shared.canOpenURL(url) {
               UIApplication.shared.open(url, options: [:], completionHandler: nil)
 
